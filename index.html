@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Treemap Diagram</title>
+  </head>
+  <body>
+    <h1 id="title">Highest Grossing Kickstarter</h1>
+
+    <div id="container">
+      <svg id="canvas">
+
+      </svg>
+      <div id="rightSide">
+        <div id="tooltip"></div>
+        <svg id="legend">
+          <g>
+            <rect class="legend-item" x="10" y="0" width="20" height="20" fill="skyblue"></rect>
+            <text x="60" y="20" fill="white">Product Design</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="20" width="20" height="20" fill="orange"></rect>
+            <text x="60" y="40" fill="white">Tabletop Games</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="40" width="20" height="20" fill="Lightgreen"></rect>
+            <text x="60" y="60" fill="white">Gaming Hardware</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="60" width="20" height="20" fill="coral"></rect>
+            <text x="60" y="80" fill="white">Video Games</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="80" width="20" height="20" fill="gold"></rect>
+            <text x="60" y="100" fill="white">Sound</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="100" width="20" height="20" fill="violet"></rect>
+            <text x="60" y="120" fill="white">Narrative Film</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="120" width="20" height="20" fill="lightblue"></rect>
+            <text x="60" y="140" fill="white">Hardware</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="140" width="20" height="20" fill="Purple"></rect>
+            <text x="60" y="160" fill="white">Games</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="160" width="20" height="20" fill="Lightgray"></rect>
+            <text x="60" y="180" fill="white">Web</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="180" width="20" height="20" fill="blue"></rect>
+            <text x="60" y="200" fill="white">Television</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="200" width="20" height="20" fill="pink"></rect>
+            <text x="60" y="220" fill="white">Art</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="220" width="20" height="20" fill="khaki"></rect>
+            <text x="60" y="240" fill="white">3D Printing</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="240" width="20" height="20" fill="gray"></rect>
+            <text x="60" y="260" fill="white">Technology</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="260" width="20" height="20" fill="tan"></rect>
+            <text x="60" y="280" fill="white">Wearables</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="280" width="20" height="20" fill="red"></rect>
+            <text x="60" y="300" fill="white">Sculpture</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="300" width="20" height="20" fill="yellow"></rect>
+            <text x="60" y="320" fill="white">Apparel</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="320" width="20" height="20" fill="whitesmoke"></rect>
+            <text x="60" y="340" fill="white">Food</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="340" width="20" height="20" fill="green"></rect>
+            <text x="60" y="360" fill="white">Gadgets</text>
+          </g>
+          <g>
+            <rect class='legend-item' x="10" y="360" width="20" height="20" fill="silver"></rect>
+            <text x="60" y="380" fill="white">Drinks</text>
+          </g>
+        </svg>
+        <div id='description'>Top level Kickstarters Sorted by Revenue</div>
+      </div>
+    </div>
+  </body>
+  <script defer src='script.js'></script>
+  <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
